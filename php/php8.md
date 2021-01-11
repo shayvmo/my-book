@@ -250,11 +250,65 @@ function foo(): X|Y {} // Allowed (redundancy is only known at runtime)
 
 ### Match Expression  match 表达式
 
+```php
+// php7
+switch (8.0) {
+  case '8.0':
+    $result = "Oh no!";
+    break;
+  case 8.0:
+    $result = "This is what I expected";
+    break;
+}
+echo $result;
+// Oh no!
+
+// php8
+echo match (8.0) {
+  '8.0' => "Oh no!",
+  8.0 => "This is what I expected",
+}
+// This is what I expected
+
+```
+
 
 
 
 
 ### Nullsafe Operator  nullsafe 运算符
 
+```php
+// php7
+$country =  null;
 
+if ($session !== null) {
+  $user = $session->user;
+
+  if ($user !== null) {
+    $address = $user->getAddress();
+ 
+    if ($address !== null) {
+      $country = $address->country;
+    }
+  }
+}
+
+// php8
+$country = $session?->user?->getAddress()?->country;
+```
+
+
+
+### 字符串和数字的比较
+
+```php
+// php7
+0 == 'foobar' // true
+
+// php8
+0 == 'foobar' // false
+// 当数字和字符串比较时，PHP8 使用数字比较
+    
+```
 
