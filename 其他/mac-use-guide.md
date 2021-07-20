@@ -25,7 +25,9 @@ sudo chown -R XXX /usr/local/Frameworks
 ```
 lsof -i tcp:8080
 ```
-![](../assets/mac-use-guide/1.jpeg)
+![](../assets/mac-use-guide/1.png)
+
+
 
 字段说明
 

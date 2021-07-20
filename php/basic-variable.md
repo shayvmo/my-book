@@ -22,8 +22,7 @@ struct test{
 这里会涉及到结构体对齐，实际是会根据机器使用等于或大于实际使用的内存，会造成一定的浪费，但是也会因为内存对齐获得更快的存取速度。
 
 如下图所示。
-![](../../assets/php/basic-variable-1.png)
-
+![](../assets/php/basic-variable-1.png)
 
 **联合体**
 
@@ -37,7 +36,7 @@ union test{
 
 实际使用的内存是8个字节，成员变量共享同一块内存。
 如下图所示。
-![](../../assets/php/basic-variable-2.png)
+![](../assets/php/basic-variable-2.png)
 
 
 ### 堆和栈
@@ -103,20 +102,20 @@ main()
 
 u1 组成如下：
 
-| 字段 | 说明 | 
+| 字段 | 说明 |
 | --- | --- |
 | type | 记录变量类型 |
-| type_flag | 对应变量类型特有的标记 | 
+| type_flag | 对应变量类型特有的标记 |
 | const_flag | 常量类型的标记 |
 | reserved | 保留字段 |
 
 
 u2 组成如下：
 
-| 字段 | 说明 | 
+| 字段 | 说明 |
 | --- | --- |
 | next | 解决哈希冲突问题，记录冲突的下一个元素位置 |
-| cache_slot | 运行时缓存 | 
+| cache_slot | 运行时缓存 |
 | lineno | 文件执行的行号 |
 | num_args | 函数调用时传入的参数个数 |
 | fe_pos | 遍历数组时的当前位置 |
@@ -132,12 +131,12 @@ u2 组成如下：
 
 | 名称 | 说明 |
 | --- | --- |
-| IS_UNDEF | 标记未定义，表示数据可以被覆盖或删除。例如unset数组元素时，就是这样标记的。
+| IS_UNDEF | 标记未定义，表示数据可以被覆盖或删除。例如unset数组元素时，就是这样标记的。|
 | IS_TRUE、IS_FALSE | IS_BOOL优化成两个，从而优化类型的检查 |
 | IS_REFERENCE | 处理引用& |
 | IS_INDIRECT | HashTable设计的不同，在解决全局符号表访问CV变量表的问题上，引入该类型 |
-| IS_PTR | 指针类型，通常用于函数类型上，如声明函数或者方法 | 
-| _IS_ERROR | 校验zval类型是否合法 | 
+| IS_PTR | 指针类型，通常用于函数类型上，如声明函数或者方法 |
+| _IS_ERROR | 校验zval类型是否合法 |
 
 ## 变量的作用域
 
