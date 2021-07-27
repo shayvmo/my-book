@@ -91,7 +91,7 @@
 
 #### key 
 
-**key列显示MySQL实际决定使用的（索引），必然包含在possible_keys中**
+key列显示MySQL实际决定使用的（索引），必然包含在possible_keys中
 
 
 

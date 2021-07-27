@@ -18,7 +18,7 @@ Typora
 
 
 
-【推荐网址】
+【推荐网站】
 
 - [技术面试必备基础知识](http://www.cyc2018.xyz/)
 
@@ -28,8 +28,6 @@ Typora
 
 - [GitHub中文排行榜](https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts)
 - [技术面试必备基础知识](https://github.com/CyC2018/CS-Notes)
-- [技术面试必备基础知识](http://www.cyc2018.xyz/)
 - [Snailclimb/JavaGuide](https://github.com/Snailclimb/JavaGuide)
-
 
 
