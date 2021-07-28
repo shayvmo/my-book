@@ -4,7 +4,7 @@
 
 
 
-【最近更新于】2021年7月27日17:57
+:memo: 2021年7月27日17:57
 
 
 
@@ -13,7 +13,8 @@
 
 
 ```php
-function bubble_sort(array $arr) {
+function bubble_sort(array $arr)
+{
     if (count($arr) <= 1) {
         return $arr;
     }
