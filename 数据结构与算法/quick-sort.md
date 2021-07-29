@@ -34,13 +34,6 @@ function quick_sort_1(array &$arr, $start_index, $end_index)
     if ($start_index >= $end_index) {
         return;
     }
-    $partition_index = partition($arr, $start_index, $end_index);
-    quick_sort_1($arr, $start_index, $partition_index - 1);
-    quick_sort_1($arr, $partition_index + 1, $end_index);
-}
-
-function partition(array &$arr, $start_index, $end_index)
-{
     $mark = $start_index;// mark 初始化为起始下标
     $standard = $arr[$start_index];// 基准值
     // 从基准值下一位开始遍历数列
@@ -56,7 +49,8 @@ function partition(array &$arr, $start_index, $end_index)
     }
     $arr[$start_index] = $arr[$mark];
     $arr[$mark] = $standard;
-    return $mark;
+    quick_sort_1($arr, $start_index, $mark - 1);
+    quick_sort_1($arr, $mark + 1, $end_index);
 }
 
 $arr = [6, 2, 3, 5, 1, 8, 7, 4, 9, 2];
@@ -83,9 +77,44 @@ var_dump($arr);
 ### 代码实现
 
 ```php
-function quick_sort(array $arr)
+// 双边扫描
+function quick_sort(array &$arr, int $start_index, int $end_index)
 {
-    
+    if ($end_index > $start_index) {
+        $left = $start_index;
+        $right = $end_index + 1;
+        $standard = $arr[$start_index];// 切分标准值
+        while (true) {
+            // 从左往后查找大的数据
+            while ($arr[++$left] < $standard) {
+                if ($left === $end_index) {
+                    break;
+                }
+            }
+            // 从右往左查找小的数据
+            while ($arr[--$right] > $standard) {
+                if ($right === $start_index) {
+                    break;
+                }
+            }
+            // 下标指针相遇，停止循环，切分完成
+            if ($left >= $right) {
+                break;
+            }
+            // 交换大值和小值元素
+            [$arr[$left], $arr[$right]] = [$arr[$right], $arr[$left]];
+        }
+        // 一轮切分完成，交换左侧小值最右侧元素和标准值
+        [$arr[$start_index], $arr[$right]] = [$arr[$right], $arr[$start_index]];
+        // 分治递归
+        quick_sort($arr, $start_index, $right - 1);
+        quick_sort($arr, $right + 1, $end_index);
+    }
 }
+
+
+$arr = [6, 2, 3, 5, 1, 8, 7, 4, 9, 2];
+quick_sort_1($arr, 0, count($arr) - 1);
+var_dump($arr);
 ```
 
