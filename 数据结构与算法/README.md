@@ -7,11 +7,11 @@
 - [数据结构概述](data-struct-1.md)
 
 - 线性表结构
-    - [数组（未完待续）](data-struct-tree.md)
-    - [链表（待更新）]()
-    - [栈（待更新）]()
-    - [队列（待更新）]()
-    - [编程技巧：递归（待更新）]()
+    - [数组](data-struct-tree.md)
+    - [链表（未完待续）](data-struct-linked-list.md)
+    - [栈（待更新）](data-struct-stack.md)
+    - [队列（待更新）](data-struct-queue.md)
+    - [编程技巧：递归（待更新）](recursion.md)
 
 ## 算法
 
@@ -19,14 +19,14 @@
 
 - 排序算法
     - [冒泡排序](bubble-sort.md)
-    - 插入排序
-    - 选择排序
-    - 归并排序
+    - [插入排序（待更新）](insert-sort.md)
+    - [选择排序（待更新）](select-sort.md)
+    - [归并排序（待更新）](merging-sort.md)
     - [快速排序](quick-sort.md)
-    - PHP 数组排序函数 sort 底层实现分析
+    - [PHP 数组排序函数 sort 底层实现分析（待更新）](php-sort-function-analyze.md)
 
 - 查找算法
-    - 二分查找
+    - [二分查找（待更新）](binary-search.md)
     - 二分查找变形版本
     - 二分查找案例：IP地址对应城市查询
     - 索引查找（一）：稠密索引
