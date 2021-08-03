@@ -8,7 +8,7 @@
 
 - 线性表结构
     - [数组](data-struct-tree.md)
-    - [链表（未完待续）](data-struct-linked-list.md)
+    - [链表](data-struct-linked-list.md)
     - [栈（待更新）](data-struct-stack.md)
     - [队列（待更新）](data-struct-queue.md)
     - [编程技巧：递归（待更新）](recursion.md)
