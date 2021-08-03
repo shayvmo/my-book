@@ -19,11 +19,11 @@
 
 - 排序算法
     - [冒泡排序](bubble-sort.md)
-    - [插入排序（待更新）](insert-sort.md)
+    - [插入排序（未完待续）](insert-sort.md)
     - [选择排序（待更新）](select-sort.md)
     - [归并排序（待更新）](merging-sort.md)
     - [快速排序](quick-sort.md)
-    - [PHP 数组排序函数 sort 底层实现分析（待更新）](php-sort-function-analyze.md)
+    - [PHP 数组排序函数 sort 底层实现分析](php-sort-function-analyze.md)
 
 - 查找算法
     - [二分查找（待更新）](binary-search.md)
