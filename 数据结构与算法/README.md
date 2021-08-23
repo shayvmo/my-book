@@ -46,3 +46,22 @@
     - Trie树算法
     - PHP 字符串匹配函数 strstr 底层实现算法剖析
 
+
+
+## LeetCode
+
+### 初级算法
+
+#### 数组
+
+- [删除排序数组中的重复项](easy-array-1.md)
+
+- [买卖股票的最佳时机II](easy-dynamic-2.md)
+
+
+
+
+
+#### 动态规划
+
+- [买卖股票的最佳时机](easy-dynamic-2.md)
