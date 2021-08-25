@@ -9,9 +9,8 @@
 - 线性表结构
     - [数组](data-struct-tree.md)
     - [链表](data-struct-linked-list.md)
-    - [栈（待更新）](data-struct-stack.md)
-    - [队列（待更新）](data-struct-queue.md)
-    - [编程技巧：递归（待更新）](recursion.md)
+    - [栈](data-struct-stack.md)
+    - [队列](data-struct-queue.md)
 
 ## 算法
 
@@ -55,8 +54,8 @@
 #### 数组
 
 - [删除排序数组中的重复项](easy-array-1.md)
-
 - [买卖股票的最佳时机II](easy-dynamic-2.md)
+- [旋转数组](rotate-array.md)
 
 
 
