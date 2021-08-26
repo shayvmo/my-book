@@ -57,7 +57,8 @@
 - [买卖股票的最佳时机II](easy-dynamic-2.md)
 - [旋转数组](rotate-array.md)
 
-
+- [存在重复数据](repeat-data.md)
+- [只出现一次的数字](single-number.md)
 
 
 
