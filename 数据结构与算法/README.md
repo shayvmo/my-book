@@ -64,4 +64,5 @@
 
 #### 动态规划
 
+- [爬楼梯](climb-stairs.md)
 - [买卖股票的最佳时机](easy-dynamic-2.md)
