@@ -40,9 +40,9 @@
     - PHP 数组底层实现原理（二）：初始化、插入、哈希冲突处理、查找、删除
 
 - 字符串匹配
-    - BF算法
-    - KMP算法
-    - Trie树算法
+    - [BF算法](string-bf-kmp-trie.md)
+    - [KMP算法（未完待续）](string-bf-kmp-trie.md)
+    - [Trie树算法（未完待续）](string-bf-kmp-trie.md)
     - PHP 字符串匹配函数 strstr 底层实现算法剖析
 
 
