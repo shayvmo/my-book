@@ -49,16 +49,16 @@
 
 ## LeetCode
 
-### 初级算法
+### [初级算法](https://leetcode-cn.com/leetbook/detail/top-interview-questions-easy/)
 
 #### 数组
 
 - [删除排序数组中的重复项](easy-array-1.md)
 - [买卖股票的最佳时机II](easy-dynamic-2.md)
 - [旋转数组](rotate-array.md)
-
 - [存在重复数据](repeat-data.md)
 - [只出现一次的数字](single-number.md)
+- [两个数组的交集-II](array-intersection-2.md)
 
 
 
