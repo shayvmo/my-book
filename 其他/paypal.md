@@ -49,6 +49,22 @@
 
 
 
+### 异步通知地址设置
+
+使用上面提到的沙箱商家账号登录沙箱后台地址 [https://www.sandbox.paypal.com/](https://www.sandbox.paypal.com/)
+
+![](../assets/paypal/sandbox-business.png)
+
+
+
+![](../assets/paypal/sandbox-business-1.png)
+
+
+
+![](../assets/paypal/sandbox-business-2.png)
+
+
+
 ### 示例
 
 【官方开源SDK】[https://github.com/paypal/PayPal-PHP-SDK](https://github.com/paypal/PayPal-PHP-SDK)
