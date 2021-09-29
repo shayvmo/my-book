@@ -59,12 +59,14 @@
 - [存在重复数据](repeat-data.md)
 - [只出现一次的数字](single-number.md)
 - [两个数组的交集-II](array-intersection-2.md)
+- [两数之和](two-sum.md)
 
 
 
 #### 字符串
 
 - [反转字符串](reverse-string.md)
+- [字符串中的第一个唯一字符](first-unique-character-in-a-string.md)
 
 
 
