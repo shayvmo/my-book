@@ -39,7 +39,7 @@ function insert_sort(&$arr) {
 $$
 n^2 / 4
 $$
- 
+
 
 时间复杂度为
 $$
@@ -105,8 +105,4 @@ function binary_insert_sort(&$arr) {
 折半查找只能用于顺序结构，不能用于链式结构
 
 适合初始记录无序，N 较大
-
-
-
-### 希尔排序 shell sort
 
