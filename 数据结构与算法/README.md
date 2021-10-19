@@ -24,7 +24,7 @@
     - [归并排序（待更新）](merging-sort.md)
     - [快速排序](quick-sort.md)
 - [PHP 数组排序函数 sort 底层实现分析](php-sort-function-analyze.md)
-    
+  
 - 查找算法
     - [二分查找（待更新）](binary-search.md)
     - 二分查找变形版本
@@ -67,8 +67,12 @@
 #### 字符串
 
 - [反转字符串](reverse-string.md)
+
 - [字符串中的第一个唯一字符](first-unique-character-in-a-string.md)
+
 - [字符串转换整数 (atoi)](string-to-integer-atoi.md)
+
+- [实现 strStr()](implement-strstr.md)
 
 
 
