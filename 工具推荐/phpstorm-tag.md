@@ -8,11 +8,15 @@
 
 #### 快捷键
 
-添加标记：ctrl + shift + (0 - 9)上排数字
+添加书签：ctrl + shift + [0 - 9]上排数字
 
-跳转到标记：ctrl + 数字
+跳转到书签：ctrl + 数字
 
+切换书签助记符：ctrl + F11
 
+显示书签：shift + F11
+
+取消单行书签：F11
 
 ![](../assets/phpstorm-bookmark.png)
 
