@@ -29,5 +29,6 @@ Typora
 - [GitHub中文排行榜](https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts)
 - [技术面试必备基础知识](https://github.com/CyC2018/CS-Notes)
 - [Snailclimb/JavaGuide](https://github.com/Snailclimb/JavaGuide)
+- [https://pdai.tech](https://pdai.tech)
 
 
