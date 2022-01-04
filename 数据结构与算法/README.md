@@ -5,12 +5,18 @@
 ## 数据结构
 
 - [数据结构概述](data-struct-1.md)
-
 - 线性表结构
     - [数组](data-struct-tree.md)
     - [链表](data-struct-linked-list.md)
     - [栈](data-struct-stack.md)
     - [队列](data-struct-queue.md)
+- 图
+- 堆
+- 树
+- 红黑树
+- 布隆过滤器
+
+
 
 ## 算法
 
