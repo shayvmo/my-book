@@ -10,10 +10,9 @@
     - [链表](data-struct-linked-list.md)
     - [栈](data-struct-stack.md)
     - [队列](data-struct-queue.md)
+- [树](data-struct-tree.md)
 - 图
 - 堆
-- [树](data-struct-tree.md)
-- 红黑树
 - 布隆过滤器
 
 

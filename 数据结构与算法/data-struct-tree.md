@@ -7,7 +7,8 @@
 - 有且只有一个根结点
 - 除根结点以外的其余结点可分为m个互不相交的有限集T1, T2, ...
 - 一棵树中的任意两个结点有且仅有唯一的路径连通
-- 
+
+  
 
 
 
@@ -69,9 +70,112 @@ B-->E
 C-->F
 ```
 
----
 
-待更新...
 
 **平衡二叉树**
+
+- 可以是一棵空树
+- 非空树，左右子树的高度差绝对值不超过1，并且左右两棵子树都是一棵平衡二叉树
+
+平衡二叉树的常用实现方法有 **红黑树**，**AVL树**，**替罪羊树**， **加权平衡树**， **伸展树** 等
+
+
+
+**二叉树存储**
+
+- 链式存储
+- 顺序存储：如果存储的不是完全二叉树，会导致内存利用率低
+
+
+
+**二叉树的遍历**
+
+先序遍历
+
+> 二叉树的先序遍历，就是先输出根结点，再遍历左子树，最后遍历右子树，遍历左子树和右子树的时候，同样遵循先序遍历的规则，也就是说，我们可以递归实现先序遍历
+
+
+
+```mermaid
+graph TB
+node3-->node1
+node3-->node2
+```
+
+
+
+
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	node1 := TreeNode{data: "node1"}
+	node2 := TreeNode{data: "node2"}
+	node3 := TreeNode{data: "node3", left: &node1, right: &node2}
+	showMsg(&node3)
+}
+
+type TreeNode struct {
+	data string
+	left *TreeNode
+	right *TreeNode
+}
+
+func showMsg(node *TreeNode) {
+	if node != nil {
+		fmt.Println(node.data)
+		showMsg(node.left)
+		showMsg(node.right)
+    } else {
+        return
+    }
+} 
+```
+
+
+
+
+
+中序遍历
+
+> 二叉树的中序遍历，就是先递归中序遍历左子树，再输出根结点的值，再递归中序遍历右子树，大家可以想象成一巴掌把树压扁，父结点被拍到了左子节点和右子节点的中间
+
+
+
+```go
+func showMsg(node *TreeNode) {
+	if node != nil {
+        showMsg(node.left)
+		fmt.Println(node.data)
+		showMsg(node.right)
+    } else {
+        return
+    }
+}
+```
+
+
+
+
+
+后序遍历
+
+> 二叉树的后序遍历，就是先递归后序遍历左子树，再递归后序遍历右子树，最后输出根结点的值
+
+
+
+```go
+func showMsg(node *TreeNode) {
+	if node != nil {
+        showMsg(node.left)
+		showMsg(node.right)
+        fmt.Println(node.data)
+    } else {
+        return
+    }
+}
+```
 
