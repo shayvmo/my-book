@@ -4,6 +4,12 @@
 
 
 
+leetcode地址：[https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
+
+
+
+
+
 ```
 // 示例二维数组
 1 2 8 9
@@ -19,26 +25,32 @@
 1、PHP
 
 ```php
-function findNum(array $array, int $target) {
-    $rows = count($array);
-    $cols = count($array[0]);
-    $row = 0;
-    $col = $cols -1;
-    if ($rows === 0 || $target > $array[$row][$col]) {
+function findNumberIn2DArray($matrix, $target) {
+    $rows = count($matrix);
+    if ($rows === 0) {
+        return false;
+    } 
+    $cols = count($matrix[0]);
+    if ($cols === 0) {
         return false;
     }
+    if ($target > $matrix[$rows - 1][$cols - 1]) {
+        return false;
+    }
+    $row = 0;
+    $col = $cols -1;
     while($col >=0 && $row < $rows) {
-        if ($target == $array[$row][$col]) {
+        if ($target === $matrix[$row][$col]) {
             return true;
         }
 
-        if ($target < $array[$row][$col]) {
+        if ($target < $matrix[$row][$col]) {
             $col--;
         } else {
             $row++;
         }
     }
-    return true;
+    return false;
 }
 
 $array = [
@@ -47,7 +59,7 @@ $array = [
     [4,7,10,13],
     [6,8,11,15]
 ];
-var_dump(findNum($array, 7));
+var_dump(findNumberIn2DArray($array, 7));
 ```
 
 
@@ -59,19 +71,25 @@ var_dump(findNum($array, 7));
 2、Go
 
 ```go
-func findNum(nums [][]int, target int) bool {
-    rows := len(nums)
-	cols := len(nums[0])
-	if rows == 0 || target > nums[rows-1][cols-1] {
+func findNumberIn2DArray(matrix [][]int, target int) bool {
+    rows := len(matrix)
+	if rows == 0 {
+		return false
+	}
+	cols := len(matrix[0])
+	if cols == 0 {
+		return false
+	}
+	if target > matrix[rows-1][cols-1] {
 		return false
 	}
 	row := 0
 	col := cols - 1
 	for ;row < rows && col >= 0; {
-		if nums[row][col] == target {
+		if matrix[row][col] == target {
 			return true
 		}
-		if target < nums[row][col] {
+		if target < matrix[row][col] {
 			col--
 		} else {
 			row++
@@ -82,7 +100,7 @@ func findNum(nums [][]int, target int) bool {
 
 func main() {
     nums := [][]int{{1,2,8,9}, {2,4,9,12}, {4,7,10,13}, {6,8,11,15}}
-	fmt.Println(offer.FindNum(nums, 7))
+	fmt.Println(findNumberIn2DArray(nums, 7))
 }
 
 ```
