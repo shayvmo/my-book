@@ -2,6 +2,8 @@
 
 > 主要是记录日常遇到的问题或搜索结果
 
+- [工具推荐](tools/README.md)
+
 
 - [Mac使用技巧汇总](mac-use-guide.md)
 - [postman接口后置操作之登录记录token到变量](postman-login.md)
