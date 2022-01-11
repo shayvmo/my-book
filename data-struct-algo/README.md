@@ -98,3 +98,5 @@
 
 30、[剑指 Offer 30. 包含min函数的栈](min-stack.md)
 
+6、[剑指 Offer 06. 从尾到头打印链表](reverse-print.md)
+
