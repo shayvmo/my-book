@@ -90,7 +90,11 @@
 
 ## 剑指Offer算法题
 
-3、[二维数组中的查找](two-dimension-array.md)
+4、[二维数组中的查找](two-dimension-array.md)
 
-4、[替换空格](replace-space.md)
+5、[替换空格](replace-space.md)
+
+9、[剑指 Offer 09. 用两个栈实现队列](c-queue.md)
+
+30、[剑指 Offer 30. 包含min函数的栈](min-stack.md)
 
