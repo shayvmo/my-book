@@ -12,7 +12,7 @@
     - [队列](data-struct-queue.md)
 - [树](data-struct-tree.md)
 - 图
-- 堆
+- [堆](heap.md)
 - 布隆过滤器
 
 
