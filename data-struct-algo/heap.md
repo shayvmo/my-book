@@ -110,7 +110,19 @@ graph TB
 
 升序
 
-| index |  0   |  1   |  2   |  3   |  4   |  5   |  6   |
-| ----- | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| value |      |      |      |      |      |      |      |
+| index |  0   |                  1                  |  2   |  3   |  4   |  5   |  6   |  7   |
+| ----- | :--: | :---------------------------------: | :--: | :--: | :--: | :--: | :--: | :--: |
+| value |      | <span style="color: red;">98</span> |  43  |  74  |  22  |  36  |  28  |  45  |
+
+取出98，自顶而下堆化
+
+- 最后一个元素填位：45 43 74 22 36 28 
+- 堆化开始：74 43 45 22 36 28 <span style="color: red;">98</span>
+- 45 43 28 22 36 <span style="color: red;">74</span> <span style="color: red;">98</span>
+- 43 36 28 22 <span style="color: red;">45</span> <span style="color: red;">74</span> <span style="color: red;">98</span>
+- 36 22 28 <span style="color: red;">43</span> <span style="color: red;">45</span> <span style="color: red;">74</span> <span style="color: red;">98</span>
+- 28 22 <span style="color: red;">36</span> <span style="color: red;">43</span> <span style="color: red;">45</span> <span style="color: red;">74</span> <span style="color: red;">98</span>
+- <span style="color: red;">22</span> <span style="color: red;">28</span> <span style="color: red;">36</span> <span style="color: red;">43</span> <span style="color: red;">45</span> <span style="color: red;">74</span> <span style="color: red;">98</span>
+
+
 
