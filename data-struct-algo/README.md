@@ -100,3 +100,5 @@
 
 6、[剑指 Offer 06. 从尾到头打印链表](reverse-print.md)
 
+24、[剑指 Offer 24. 反转链表](reverse-list.md)
+
