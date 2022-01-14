@@ -25,7 +25,7 @@
     - [冒泡排序](bubble-sort.md)
     - [插入排序](insert-sort.md)
     - 希尔排序
-    - [选择排序（待更新）](select-sort.md)
+    - [选择排序](select-sort.md)
     - [归并排序（待更新）](merging-sort.md)
     - [快速排序](quick-sort.md)
 - [PHP 数组排序函数 sort 底层实现分析](php-sort-function-analyze.md)
