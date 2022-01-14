@@ -7,6 +7,7 @@
 - [Goland debug 遇到低版本的delve](delve-old-version.md)
 - [数据类型](data-type.md)
 - [基础入门](basic.md)
+- [Go语言中import导入包时：点. 、下划线_ 、别名的用法](import-package.md)
 
 
 
