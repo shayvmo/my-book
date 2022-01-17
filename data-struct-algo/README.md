@@ -104,3 +104,5 @@
 
 35、[剑指 Offer 35.复杂链表的复制](copy-random-list.md)
 
+58、[剑指 Offer 58 - II 左旋转字符串](reverse-left-words.md)
+
