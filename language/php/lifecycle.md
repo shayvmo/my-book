@@ -29,17 +29,17 @@ SAPI 核心结构SG(v) `sapi_globals` 对应 `_sapi_globals_struct`
 
 5个阶段：模块初始化、请求初始化、执行、请求关闭、模块关闭
 
-![](../assets/php/lifecycle/1.png)
+![](../../assets/php/lifecycle/1.png)
 
 1、模块初始化
 
 - FPM 模式，进程启动后只会进行一次模块初始化，进而进入循环，进行请求的初始化
 
-  ![](../assets/php/lifecycle/php_module_startup.png)
+  ![](../../assets/php/lifecycle/php_module_startup.png)
 
 2、请求初始化
 
-![](../assets/php/lifecycle/php_request_startup.png)
+![](../../assets/php/lifecycle/php_request_startup.png)
 
 
 
@@ -47,7 +47,7 @@ SAPI 核心结构SG(v) `sapi_globals` 对应 `_sapi_globals_struct`
 
 入口函数是 `php_execute_script`
 
-![](../assets/php/lifecycle/php_execute_script.png)
+![](../../assets/php/lifecycle/php_execute_script.png)
 
 
 
@@ -67,7 +67,7 @@ SAPI 核心结构SG(v) `sapi_globals` 对应 `_sapi_globals_struct`
 
 完成这些工作后，FPM 模式会循环等待请求的到来， 继续进行请求初始化。而CLI 模式会直接进入最后一个阶段。
 
-![](../assets/php/lifecycle/php_request_shutdown.png)
+![](../../assets/php/lifecycle/php_request_shutdown.png)
 
 
 
@@ -85,7 +85,7 @@ SAPI 核心结构SG(v) `sapi_globals` 对应 `_sapi_globals_struct`
 
 5）销毁core_globals。
 
-![](../assets/php/lifecycle/php_module_shutdown.png)
+![](../../assets/php/lifecycle/php_module_shutdown.png)
 
 
 
@@ -113,11 +113,11 @@ webserver 运行过程
 
 Client 通过 HTTP方式请求 nginx，nginx 的worker进行处理，转成对应的 FastCGI，请求 FPM，FPM的worker 进程进行处理，执行完毕后，返回 nginx，再一步返回 client
 
-![](../assets/php/lifecycle/webserver.png)
+![](../../assets/php/lifecycle/webserver.png)
 
 php-fpm启动时，首先启动一个calling process，然后由calling process创建master进程，master进程根据需要创建的子进程数创建work进程，其中master进程的title为php-fpm: master process，而worker进程的名称为php-fpm: pool name，其中name在php-fpm.conf 文件开头设置 :   [www]
 
-![](../assets/php/lifecycle/process_create.png)
+![](../../assets/php/lifecycle/process_create.png)
 
 
 
