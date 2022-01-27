@@ -70,7 +70,7 @@ Typora
 
 
 
-## 第三部分 系统结构
+## [第三部分 系统架构](system-design/README.md)
 
 待整理
 
