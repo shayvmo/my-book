@@ -7,3 +7,4 @@
 - [消息队列设计精要](msg-queue.md)
 - [简单抽奖算法](prize.md)
 - [接口幂等性设计](api-idempotence.md)
+- [RESTful API](restful-api.md)
