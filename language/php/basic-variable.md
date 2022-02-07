@@ -22,7 +22,7 @@ struct test{
 这里会涉及到结构体对齐，实际是会根据机器使用等于或大于实际使用的内存，会造成一定的浪费，但是也会因为内存对齐获得更快的存取速度。
 
 如下图所示。
-![](../assets/php/basic-variable-1.png)
+![](../../assets/php/basic-variable-1.png)
 
 **联合体**
 
@@ -36,7 +36,7 @@ union test{
 
 实际使用的内存是8个字节，成员变量共享同一块内存。
 如下图所示。
-![](../assets/php/basic-variable-2.png)
+![](../../assets/php/basic-variable-2.png)
 
 
 ### 堆和栈

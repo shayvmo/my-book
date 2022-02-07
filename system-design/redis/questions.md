@@ -212,7 +212,7 @@ Raft选举算法：选举的票数大于等于 num(sentinels)/2 + 1时，将成�
 - 确立主从关系
   - replicaof 主库IP 端口
 
-![](../assets/redis/full-resync.png)
+![](../../assets/redis/full-resync.png)
 
 第一阶段从库发送psync 命令，表示需要进行数据同步，主库启动复制，使用 fullresync 命令响应返回主库ID和复制进度下标。第二阶段，主库发送RDB文件到从库，从库接收到文件后，先清空现有数据，并加载RDB文件。在复制同步过程中，主库发生的命令记录到缓冲区 replication buffer。主库发送RDB文件完成后，再把缓冲区的内容发给从库，这样主从库就实现同步了。
 
@@ -220,7 +220,7 @@ Raft选举算法：选举的票数大于等于 num(sentinels)/2 + 1时，将成�
 
 增量复制
 
-![](../assets/redis/psync.png)
+![](../../assets/redis/psync.png)
 
 
 
